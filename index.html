@@ -1,5 +1,427 @@
-<html>
-<title>Yo!</title>
-<body>Hey there! I'm currently constructing my new portfolio as a git page.  
-You can check out my old portfolio <a href="http://tomeffland.us">here</a>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tom Effland</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css"> -->
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="static/css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- top left brand -->
+                <a class="navbar-brand page-scroll" href="#page-top">Tom Effland</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#publications">Papers</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/static/cv.pdf">CV</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/static/resume.pdf">Resume</a>
+                    </li>
+
+                    <li>
+                    <!-- <a class="page-scroll" href="#contact"></a> -->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <!-- <h1>{{header.header}}</h1> -->
+                <h1>Hey, I'm <strong>Tom Effland.</strong></h1>
+                <!-- <hr> -->
+                <br>
+                <div id="headshot"></div>
+                <br>
+                <div class="social">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/tomeffland" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="https://github.com/teffland" class="icon fa-github"><span class="label">Github</span></a></li>
+                                <li><a href="http://stackoverflow.com/users/2666216/taaam" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
+                                <li><a href="https://www.facebook.com/tom.effland" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                <li><a href="mailto:teffland@cs.columbia.edu
+                                    " class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                            </ul>
+                </div>
+                <br><br>
+                <p>
+                   Welcome to my personal website.
+                   <br>
+                   Here you can find info about me, my work, and some other stuff I find interesting.
+                   <br>
+                   <br>
+                   I'm a first year PhD student in Computer Science at Columbia University advised by Luis Gravano.
+<!--                    <br>
+                   <br>
+                   Also I took this photo hiking in the Grand Tetons. I like it. -->
+                </p>
+<!--                 <p>{% for comment in header.comments %}
+                    {{comment}}<br>
+                    {% endfor %}
+                </p>
+                <a href="{{header.button.href}}" class="btn btn-primary btn-xl page-scroll">
+                  {{header.button.text}}
+                </a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- RESEARCH -->
+    <section id="research">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Research Interests</h2>
+                    <hr class="primary">
+                    <p>
+                        My research interests are in advancing algorithms and systems for extracting structured information from unstructured text.
+                        <!-- <br>Broadly this touches many disciplines: machine learning, natural language processing, information retrieval, databases, and knowledge representation.  -->
+                        <br>
+                        <br>
+                        I'm interested in scalable learning-based approaches to information extraction and knowledge acquisition for knowledge bases.
+                        <!-- Also, I'm interested in using probabilistic logic and learned representations of textual entities to improve extraction consistency and perform linking across multiple documents. -->
+                        <br>
+                        <br>
+                        I'm always interested in applications of these techniques for actionable inferences in a variety of domains.
+                        <br>Currently I'm working on a system to mine social media documents for evidence of foodborne illness outbreaks in restaurants in NYC.
+                        <br>
+                        <br>
+                        As an undergrad I worked on creating machine learning-enabled web crawlers for smarter information retrieval, open source visualization and analysis software for geospatial data, and theoretically secure fingerprint verification algorithms.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <h3>Sturdy Templates</h3>
+                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Ready to Ship</h3>
+                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Up to Date</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+<!-- <hr class="muted"> -->
+    <!-- PROJECTS -->
+    <section class="bg-primary" id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                    <hr class="light">
+                </div>
+            </div>
+
+<!-- Fingerprints as Passwords
+FindIt: Focused Web-Crawling
+iGlobe: Geospatial Machine Learning
+Foodpoisoning on Social Media -->
+
+
+<!-- #DiscLDA: Supervised Topic-Modeling -->
+
+            <div class="row no-gutter">
+                <!-- 1 -->
+                <div class="col-lg-6 col-sm-6">
+                    <a href="" onclick="return false;" class="portfolio-box">
+                        <img src="/static/img/portfolio/yelp_nyc_fit.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Foodpoisoning on Social Media
+                                </div>
+                                <div class="project-description text-faded">
+                                    <p> Many people report food poisoning from restaurants on social media, such as Yelp and Twitter.
+                                    </p>
+                                    <p>
+                                        This project aims to mine these social media streams to identify evidence of restaurants in NYC that may be the sources of foodborne illness outbreaks. We work with the NYC Department of Health to use this software to help launch investigations.
+                                    </p>
+                                    <!-- <p> Through a collaboration with the NYC Department of Health and Mental Hygiene, this information is used to help launch investigations</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 2 -->
+                <div class="col-lg-6 col-sm-6">
+                    <a href="" onclick="return false;" class="portfolio-box">
+                        <img src="/static/img/portfolio/findit_graph.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    FindIt: Smart Web Crawling
+                                </div>
+                                <div class="project-description text-faded">
+                                    <p>Often different websites host many pages that share a common theme, but have non-uniform structure; think college course descriptions.
+                                    </p>
+                                    <p>
+                                        FindIt uses semi-supervised machine learning to quickly learn search strategies that generalize across website organizational structures.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <span class="icon fa-file-text-o" title="Paper"
+                                onclick="document.location.href = 'static/papers/acm-src-grand.pdf'; return false"></span>
+
+                                <span class="icon fa-code-fork" title="Code"
+                                onclick="document.location.href = 'https://github.com/teffland/FindIt; return false"></span>
+                                <!-- <a class="icon fa-file-text-o" href="static/papers/acm_src.pdf"></a> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 3 -->
+                <div class="col-lg-6 col-sm-6">
+                    <a href="" onclick="return false;" class="portfolio-box">
+                        <img src="/static/img/portfolio/secure_fp.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Fingerprints as Passwords
+                                </div>
+                                <div class="project-description text-faded">
+                                    <p>This project was at the intersection of cryptography, biometrics, and pattern recognition.
+                                    </p>
+                                    <p>The goal was to develop theoretically secure encryptions of fingerprint templates such that matching was still possible in the encrypted space.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <div class="project-links">
+                                    <span class="icon fa-file-text-o" title="Paper"
+                                    onclick="document.location.href = 'static/papers/CVPRW2015.pdf'; return false"></span>
+                                    <span class="icon fa-file-text-o" title="Paper"
+                                    onclick="document.location.href = 'static/papers/cvpr-final.pdf'; return false"></span>
+                                    <span class="icon fa-file-text-o" title="Paper"
+                                    onclick="document.location.href = 'static/papers/SPIE-2014.pdf'; return false"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 4 -->
+                <div class="col-lg-6 col-sm-6">
+                    <a href="http://www.cse.buffalo.edu/~chandola/software.html" class="portfolio-box">
+                        <img src="/static/img/portfolio/iglobe_final.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    iGlobe: Geospatial Machine Learning
+                                </div>
+                                <div class="project-description text-faded">
+                                    <p>
+                                    iGlobe is a machine learning layer built on top of NASA's
+                                    <span class="link" onclick="document.location.href = 'static/papers/acm_src.pdf'; return false">WorldWind</span>. It allows for the incorporation, visualization, and analysis of independent geospatial datasets.
+                                    </p>
+                                    <p>I worked on this project with my machine learning professor, Dr. Varun Chandola for the NASA Europa Challenge, where our team won 2nd place for university entries.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 5 -->
+         <!--        <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="/static/img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name text-faded">
+                                    Category
+                                </div>
+                                <div class="project-description">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+                <!-- 6 -->
+         <!--        <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="/static/img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name text-faded">
+                                    Category
+                                </div>
+                                <div class="project-description">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PAPERS -->
+    <section id="publications">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Publications</h2>
+                    <hr>
+                    <ul class="publications">
+                        <li>
+                        <strong>T. Effland</strong>. Focused Retrieval of University Course Descriptions from Highly Variable Sources. In <i>ACM Student Research Competition Grand Finals</i>, 2015.
+                        <br>
+                        <span class="label label-success">First Place Award</span>
+                        <a href="static/papers/acm-src-grand.pdf" class="icon fa-file-text-o" title="Paper"> Paper</a>
+                        </li>
+                        <li>
+                        J. Hartloff, M. Morse, B. Zhang, <strong>T. Effland</strong>, J. Cordaro, J. Schuler, S. Tulyakov, A. Rudra, V. Govindaraju. A Multiple Server Scheme for Fingerprint Fuzzy Vaults. In <i>IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</i>, 2015.
+                        <br>
+                        <a href="static/papers/CVPRW2015.pdf" class="icon fa-file-text-o" title="Paper"> Paper</a>
+                        </li>
+                        <li>
+                        M. Morse, J. Hartloff, <strong>T. Effland</strong>, J. Schuler, J. Cordaro, S. Tulyakov, A. Rudra, V. Govindaraju. Secure Fingerprint Matching With Generic Local Structures. In <i>IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</i>, 2014.
+                        <br>
+                        <a href="static/papers/cvpr-final.pdf" class="icon fa-file-text-o" title="Paper"> Paper</a>
+                        </li>
+                        <li>
+                        <strong>T. Effland</strong>, M. Schneggenburger, J. Schuler, B. Zhang, J. Hartloff, J. Dobler, S. Tulyakov, A. Rudra, V. Govindaraju. Secure Fingerprint Hashes Using Subsets of Local Structures. <i>In Proc. SPIE 9075-12, Biometric and Surveillance Technology for Human and Activity Identification XI, 90750D</i>, 2014.
+                        <br>
+                        <a href="static/papers/SPIE-2014.pdf" class="icon fa-file-text-o" title="Paper"> Paper</a>
+                        </li>
+                    </ul>
+                    <!-- <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PERSONAL -->
+<!--     <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Some other stuff I find interesting...</h2> -->
+                <!-- <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a> -->
+       <!--      </div>
+        </div>
+    </aside> -->
+
+    <!-- CONTACT  -->
+    <hr class="muted">
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <!-- <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x"></i>
+                    <p>301-395-7542</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x"></i>
+                    <p><a href="mailto:teffland@cs.columbia.edu">teffland@cs.columbia.edu</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/js/jquery.easing.min.js"></script>
+    <script src="static/js/jquery.fittext.js"></script>
+    <script src="static/js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="static/js/creative.js"></script>
+
+</body>
+
+</html>
