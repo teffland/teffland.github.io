@@ -18,7 +18,7 @@ body {
 }
 
 /*.icon {
-  font-family: 'Josefin Sans', sans-serif !important;   
+  font-family: 'Josefin Sans', sans-serif !important;
 }*/
 
 hr {
@@ -48,7 +48,8 @@ span.icon:hover,
 span.icon:focus,
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #222;
+    border-bottom:1px dotted;
     text-decoration: none;
 }
 
@@ -82,7 +83,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0px 0px 0px;
 }
 
 aside {
@@ -111,7 +112,8 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #337ab7;
+    border-bottom:0px;
 }
 
 .navbar-default .nav > li>a,
@@ -120,23 +122,26 @@ aside {
     font-size: 13px;
     font-weight: 700;
     color: #222;
+    border-bottom: 0px;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #eb3812;
+    color: #337ab7;
+    border-bottom: 0px;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #337ab7!important;
+    color: #222!important;
     background-color: transparent;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
-    color: #eb3812!important;
+    color: #222!important;
     background-color: transparent;
+    border-bottom: 0px;
 }
 
 @media(min-width:768px) {
@@ -152,6 +157,7 @@ aside {
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         color: #fff;
+        text-decoration: none;
     }
 
     .navbar-default .nav > li>a,
@@ -162,31 +168,34 @@ aside {
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
         color: #fff;
+        border-bottom: 0px;
     }
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #fff;
+        background-color: #337ab7;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #337ab7;
+        color: #fff;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #222;
     }
 
     .navbar-default.affix .nav > li>a,
     .navbar-default.affix .nav>li>a:focus {
-        color: #222;
+        color: #fff;
+        text-decoration: none;
     }
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #337ab7;
+        color: #222;
+        border-bottom: 0px;
     }
 }
 
@@ -207,13 +216,13 @@ header {
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 100px 15px 25px 15px;
     text-align: center;
-    
+
 }
 
 header .header-content .header-content-inner {
-    text-shadow: 0px 0px 8px #111;
+    text-shadow: 0px 0px 14px #222;
 }
 
 header .header-content .header-content-inner h1 {
@@ -230,9 +239,9 @@ header .header-content .header-content-inner hr {
 }
 
 header .header-content .header-content-inner p {
-    margin-bottom: 50px;
-    font-size: 16px;
-    font-weight: 300;
+    /*margin-bottom: 50px;*/
+    font-size: 18px;
+    font-weight: 400;
     color: rgba(255,255,255,1);
 }
 
@@ -260,12 +269,13 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
 .section-heading {
     margin-top: 0;
+    text-align: center;
 }
 
 .service-box {
@@ -542,7 +552,7 @@ body {
 }
 
 div.social>ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding:0px;
 }
 
@@ -567,9 +577,16 @@ div.social>ul>li>a {
 
 }
 
+div.social>ul>li>span.icon,
+div.social>ul>li>span.label,
+div.social>ul>li>a.icon {
+    margin-right:0px!important;
+}
+
 div.social>ul>li>a:hover {
     color:#337ab7;
     text-decoration: none;
+    border-bottom: 0px;
 }
 
 section#portfolio {
@@ -591,21 +608,50 @@ a.icon {
 
 #headshot {
     display: block;
-    margin:auto;
-    width: 100px;
-    height: 100px;
+    margin:20px auto auto auto;
+    width: 200px;
+    height: 200px;
     /*background: #E6E7ED;*/
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    background-image: url(../img/dan_wedding.jpg);
+    background-size:130%;
+    background-image: url(../img/bw.jpg);
     background-position:50% 50%;
-    background-repeat:no-repeat;    
+    background-repeat:no-repeat;
     box-shadow: 0px 0px 6px #111;
 }
 
+.project-pic {
+  display: block;
+  margin: 25px auto auto auto;
+  width: 125px;
+  height: 125px;
+  /*background: #E6E7ED;*/
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  box-shadow: 0px 0px 6px #111;
+}
+
+#footer {
+  -moz-box-shadow:    0px -3px 10px 1px #ccc;
+  -webkit-box-shadow: 0px -3px 10px 1px #ccc;
+  box-shadow:         0px -3px 10px 1px #ccc;
+  margin: 50px 0px 0px 0px;
+  width: 100%;
+}
+
+#footer>div>div>p {
+  margin:20px 0px;
+}
+
+ul.publications {
+  padding:0px;
+}
 ul.publications li{
     list-style-type: none;
-    margin:10px;
-    text-align: left;
+    margin:10px 0px;
 }

@@ -58,16 +58,16 @@
                         <a class="page-scroll" href="#research">Research</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Projects</a>
+                        <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#publications">Papers</a>
                     </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li> -->
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="/static/cv_11-28-17.pdf">CV</a>
+                        <a class="page-scroll" href="static/cv_11-28-17.pdf">CV</a>
                     </li>
                     <li>
                     <!-- <a class="page-scroll" href="#contact"></a> -->
@@ -82,41 +82,26 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <!-- <h1>{{header.header}}</h1> -->
-                <h1>Hey, I'm <strong>Tom Effland.</strong></h1>
-                <!-- <hr> -->
-                <br>
                 <div id="headshot"></div>
                 <br>
+                <br>
+                <p>
+                  I'm a third year PhD student in Computer Science at Columbia University.
+                  <br>
+                  At a high level, I'm interested in how machine reading can help us
+                  <br>
+                  make sense of the vast ocean of text on the Internet
+                  <br>
+                  so that we can be better informed and make smarter choices.
+                </p>
                 <div class="social">
                             <ul>
                                 <li><a href="https://www.linkedin.com/in/tomeffland" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="mailto:teffland@cs.columbia.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
                                 <li><a href="https://github.com/teffland" class="icon fa-github"><span class="label">Github</span></a></li>
                                 <li><a href="http://stackoverflow.com/users/2666216/taaam" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
-                                <li><a href="https://www.facebook.com/tom.effland" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                                <li><a href="mailto:teffland@cs.columbia.edu
-                                    " class="icon fa-envelope-o"><span class="label">Email</span></a></li>
                             </ul>
                 </div>
-                <br><br>
-                <p>
-                   Welcome to my personal website.
-                   <br>
-                   Here you can find info about me, my work, and some other stuff I find interesting.
-                   <br>
-                   <br>
-                   I'm a first year PhD student in Computer Science at Columbia University advised by Luis Gravano.
-<!--                    <br>
-                   <br>
-                   Also I took this photo hiking in the Grand Tetons. I like it. -->
-                </p>
-<!--                 <p>{% for comment in header.comments %}
-                    {{comment}}<br>
-                    {% endfor %}
-                </p>
-                <a href="{{header.button.href}}" class="btn btn-primary btn-xl page-scroll">
-                  {{header.button.text}}
-                </a> -->
             </div>
         </div>
     </header>
@@ -125,213 +110,158 @@
     <section id="research">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Research Interests</h2>
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-heading">Research</h2>
                     <hr class="primary">
                     <p>
-                        My research interests are in advancing algorithms and systems for extracting structured information from unstructured text.
-                        <!-- <br>Broadly this touches many disciplines: machine learning, natural language processing, information retrieval, databases, and knowledge representation.  -->
-                        <br>
-                        <br>
-                        I'm interested in scalable learning-based approaches to information extraction and knowledge acquisition for knowledge bases.
-                        <!-- Also, I'm interested in using probabilistic logic and learned representations of textual entities to improve extraction consistency and perform linking across multiple documents. -->
-                        <br>
-                        <br>
-                        I'm always interested in applications of these techniques for actionable inferences in a variety of domains.
-                        <br>Currently I'm working on a system to mine social media documents for evidence of foodborne illness outbreaks in restaurants in NYC.
-                        <br>
-                        <br>
-                        As an undergrad I worked on creating machine learning-enabled web crawlers for smarter information retrieval, open source visualization and analysis software for geospatial data, and theoretically secure fingerprint verification algorithms.
-
+                      I'm interested in novel principled techniques for semi-automatically
+                      distilling structured knowledge from text and integrating
+                      it with existing structured knowledge bases.
+                    </p>
+                    <p>
+                      Currently I'm exploring how to use semi-supervised
+                      variational autoencoders to learn a semantic parser
+                      by leveraging an existing knowledge base.
+                    <p>
+                      I'm broadly interested in machine learning, natural language understanding,
+                      information extraction and semantic parsing,
+                      knowledge discovery and representation, probabilistic graphical models,
+                      and representation/deep learning.
                     </p>
 
                 </div>
             </div>
         </div>
-        <!-- <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </section>
 <!-- <hr class="muted"> -->
     <!-- PROJECTS -->
-    <section class="bg-primary" id="portfolio">
-        <div class="container-fluid">
+    <section id="projects">
+        <div class="container">
             <div class="row">
-                 <div class="col-lg-12 text-center">
+                 <div class="col-lg-12">
                     <h2 class="section-heading">Projects</h2>
-                    <hr class="light">
+                    <hr>
                 </div>
             </div>
 
-<!-- Fingerprints as Passwords
-FindIt: Focused Web-Crawling
-iGlobe: Geospatial Machine Learning
-Foodpoisoning on Social Media -->
+            <!-- FBNYC -->
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div class="project-pic"
+                     style="background-size:190%;
+                            background-position:10% 50%;
+                            background-image: url(static/img/yelp_nyc_fit.jpg);"></div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <h3>Detecting Foodborne Illness on Social Media</h3>
+                <h4><small>Joint work with Lampros Flokas, Yogesh Garg, and Anna Lawson</small></h4>
+                <h4><small>Advised by Luis Gravano and Daniel Hsu</small></h4>
+                <p>Many people disclose incidents foodborne illness on Yelp and Twitter.
+                  In collaboration with the NYC Department of Health and Mental Hygiene,
+                  we built a document classification system that mines Yelp and Twitter
+                  for reports of foodborne illness to facilitate the targeted investigation
+                  of foodborne illness outbreaks.
+                </p>
+                <p>
+                  <a href="http://publichealth.cs.columbia.edu/" class="icon fa-globe" title="Project Website"></a>
+                  <a href="https://github.com/teffland/FoodborneNYC" class="icon fa-code-fork" title="Code"></a>
+                </p>
+              </div>
+            </div>
 
+            <!-- dExplorer -->
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div class="project-pic"
+                     style="background-size:100%;
+                            background-position:10% 50%;
+                            background-image: url(static/img/dexplorer.png);"></div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <h3>The Posts Recommendation Algorithm for dExplorer</h3>
+                <h4><small>Joint work with Drashko Nakikj</small></h4>
+                <p>Using a mixture of unsupervised document similarity methods,
+                we recommend relevant posts in medical discussion forums to help
+                users find the information they're seeking faster. We're currently
+                developing a chrome extension to put the algorithm into practice.
+                </p>
+                <p>
+                  <a href="static/papers/dExplorer_poster.pdf" class="icon fa-newspaper-o" title="Poster"></a>
+                  <a href="https://github.com/teffland/dExplorer" class="icon fa-code-fork" title="Code (In Flux)"></a>
+                </p>
+              </div>
+            </div>
 
-<!-- #DiscLDA: Supervised Topic-Modeling -->
+            <!-- FindIt -->
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div class="project-pic"
+                     style="background-size:220%;
+                            background-position:30% 20%;
+                            background-image: url(static/img/sigcse_pres_graph.png);"></div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <h3>FindIt: Smart Web Crawling</h3>
+                <h4><small>Advised by Bina Ramamurthy</small></h4>
+                <p>Often different websites host many pages that share a common theme,
+                  but have non-uniform structure, such as college course descriptions or product catalogs.
+                </p>
+                <p>
+                  FindIt uses semi-supervised machine learning to quickly learn
+                  search strategies that generalize across website organizational structures.
+                </p>
+                <p>
+                  <a href="static/papers/acm-src-grand.pdf" class="icon fa-file-text-o" title="ACM Student Research Competition Grand Finals"></a>
+                </p>
+              </div>
+            </div>
 
-            <div class="row no-gutter">
-                <!-- 1 -->
-                <div class="col-lg-6 col-sm-6">
-                    <a href="" onclick="return false;" class="portfolio-box">
-                        <img src="/static/img/portfolio/yelp_nyc_fit.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Foodpoisoning on Social Media
-                                </div>
-                                <div class="project-description text-faded">
-                                    <p> Many people report food poisoning from restaurants on social media, such as Yelp and Twitter.
-                                    </p>
-                                    <p>
-                                        This project aims to mine these social media streams to identify evidence of restaurants in NYC that may be the sources of foodborne illness outbreaks. We work with the NYC Department of Health to use this software to help launch investigations.
-                                    </p>
-                                    <!-- <p> Through a collaboration with the NYC Department of Health and Mental Hygiene, this information is used to help launch investigations</p> -->
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- 2 -->
-                <div class="col-lg-6 col-sm-6">
-                    <a href="" onclick="return false;" class="portfolio-box">
-                        <img src="/static/img/portfolio/findit_graph.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    FindIt: Smart Web Crawling
-                                </div>
-                                <div class="project-description text-faded">
-                                    <p>Often different websites host many pages that share a common theme, but have non-uniform structure; think college course descriptions.
-                                    </p>
-                                    <p>
-                                        FindIt uses semi-supervised machine learning to quickly learn search strategies that generalize across website organizational structures.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="project-links">
-                                <span class="icon fa-file-text-o" title="Paper"
-                                onclick="document.location.href = 'static/papers/acm-src-grand.pdf'; return false"></span>
+            <!-- Secure Fingerprints -->
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div class="project-pic"
+                     style="background-size:100%;
+                            background-position:10% 50%;
+                            background-image: url(static/img/secure_fp.png);"></div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <h3>Fingerprints as Passwords</h3>
+                <h4><small>Joint work with Matt Morse, Jesse Hartloff, and more. See publications.</small></h4>
+                <h4><small>Advised by Atri Rudra</small></h4>
+                <p>This project was at the intersection of cryptography, biometrics, and pattern recognition.
+                </p>
+                <p>The goal was to develop theoretically secure encryptions of
+                  fingerprint templates such that matching was still possible in the encrypted space.
+                </p>
+                <p>
+                  <a href="static/papers/CVPRW2015.pdf" class="icon fa-file-text-o" title="CVPRW 2015"></a>
+                  <a href="static/papers/cvpr-final.pdf" class="icon fa-file-text-o" title="CVPRW 2014"></a>
+                  <a href="static/papers/SPIE-2014.pdf" class="icon fa-file-text-o" title="SPIE 2014"></a>
+                </p>
+              </div>
+            </div>
 
-                                <span class="icon fa-code-fork" title="Code"
-                                onclick="document.location.href = 'https://github.com/teffland/FindIt; return false"></span>
-                                <!-- <a class="icon fa-file-text-o" href="static/papers/acm_src.pdf"></a> -->
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- 3 -->
-                <div class="col-lg-6 col-sm-6">
-                    <a href="" onclick="return false;" class="portfolio-box">
-                        <img src="/static/img/portfolio/secure_fp.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    Fingerprints as Passwords
-                                </div>
-                                <div class="project-description text-faded">
-                                    <p>This project was at the intersection of cryptography, biometrics, and pattern recognition.
-                                    </p>
-                                    <p>The goal was to develop theoretically secure encryptions of fingerprint templates such that matching was still possible in the encrypted space.
-                                    </p>
-
-                                </div>
-
-                            </div>
-                            <div class="project-links">
-                                    <span class="icon fa-file-text-o" title="Paper"
-                                    onclick="document.location.href = 'static/papers/CVPRW2015.pdf'; return false"></span>
-                                    <span class="icon fa-file-text-o" title="Paper"
-                                    onclick="document.location.href = 'static/papers/cvpr-final.pdf'; return false"></span>
-                                    <span class="icon fa-file-text-o" title="Paper"
-                                    onclick="document.location.href = 'static/papers/SPIE-2014.pdf'; return false"></span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- 4 -->
-                <div class="col-lg-6 col-sm-6">
-                    <a href="http://www.cse.buffalo.edu/~chandola/software.html" class="portfolio-box">
-                        <img src="/static/img/portfolio/iglobe_final.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    iGlobe: Geospatial Machine Learning
-                                </div>
-                                <div class="project-description text-faded">
-                                    <p>
-                                    iGlobe is a machine learning layer built on top of NASA's
-                                    <span class="link" onclick="document.location.href = 'static/papers/acm_src.pdf'; return false">WorldWind</span>. It allows for the incorporation, visualization, and analysis of independent geospatial datasets.
-                                    </p>
-                                    <p>I worked on this project with my machine learning professor, Dr. Varun Chandola for the NASA Europa Challenge, where our team won 2nd place for university entries.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- 5 -->
-         <!--        <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="/static/img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name text-faded">
-                                    Category
-                                </div>
-                                <div class="project-description">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
-                <!-- 6 -->
-         <!--        <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="/static/img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name text-faded">
-                                    Category
-                                </div>
-                                <div class="project-description">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div> -->
+            <!-- iGlobe -->
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div class="project-pic"
+                     style="background-size:190%;
+                            background-position:50% 50%;
+                            background-image: url(static/img/iglobe_final.png);"></div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <h3>iGlobe: Geospatial Machine Learning</h3>
+                <h4><small>Advised by Varun Chandola</small></h4>
+                <p>
+                iGlobe is a machine learning layer built on top of NASA's
+                <a href="https://worldwind.arc.nasa.gov">WorldWind</a>. It allows for the incorporation, visualization, and analysis of independent geospatial datasets.
+                </p>
+                <p>I worked on this project with my machine learning professor, Dr. Varun Chandola for the NASA Europa Challenge, where our team won 2nd place for university entries.
+                </p>
+                <p>
+                  <a href="http://www.cse.buffalo.edu/~chandola/software.html" class="icon fa-globe" title="Project Website"></a>
+                </p>
+              </div>
             </div>
         </div>
     </section>
@@ -340,10 +270,17 @@ Foodpoisoning on Social Media -->
     <section id="publications">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading">Publications</h2>
                     <hr>
                     <ul class="publications">
+                        <li>
+                          <strong>T. Effland</strong>, Anna Lawson, Sharon Balter, Katelynn Devinney, Vasuhda Reddy, Luis Gravano, Daniel
+                          Hsu. Discovering Foodborne Illness in Online Restaurant Reviews. <i>Journal of the American Medical Informatics Association (JAMIA)</i>, 2018.
+                          <br>
+                          <span class="label label-info">To Appear</span>
+                          <a href="https://github.com/teffland/FoodborneNYC/tree/master/jamia_2017" class="icon fa-code-fork" title="Code"> Code</a>
+                        </li>
                         <li>
                         <strong>T. Effland</strong>. Focused Retrieval of University Course Descriptions from Highly Variable Sources. In <i>ACM Student Research Competition Grand Finals</i>, 2015.
                         <br>
@@ -372,6 +309,22 @@ Foodpoisoning on Social Media -->
         </div>
     </section>
 
+    <!-- ABOUT -->
+    <!-- <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-heading">About</h2>
+                    <hr class="primary">
+                    <p>
+                      When I'm not working, I enjoy reading, painting, traveling, and getting outdoors.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
 
     <!-- PERSONAL -->
 <!--     <aside class="bg-dark">
@@ -384,14 +337,13 @@ Foodpoisoning on Social Media -->
     </aside> -->
 
     <!-- CONTACT  -->
-    <hr class="muted">
+    <!-- <hr class="muted">
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <!-- <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x"></i>
@@ -403,7 +355,14 @@ Foodpoisoning on Social Media -->
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+      <div class="container" id="footer">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>Made with &hearts; Tom Effland, 2017</p>
+            </div>
+          </div>
+      </div>
     <!-- jQuery -->
     <script src="static/js/jquery.js"></script>
 
