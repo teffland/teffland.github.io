@@ -31,7 +31,7 @@ h3 {
 	margin: 0;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	color: var(--head_color);
 }
 
@@ -49,7 +49,7 @@ h5 {
 	margin: 0;
 	padding-top: 5px;
 	padding-bottom: 10px;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 	color: var(--head_color);
 }
 
@@ -171,6 +171,50 @@ li a {
 
 #p_auth {
 	font-style: italic;
+}
+
+.blurb {
+  border: 1px solid #ccc;
+	border-radius: 3px;
+  /* display: none; */
+  font-size: 10px;
+  /* margin-top: 10px; */
+  padding: 0px;
+	visibility: hidden;
+	height: 0px;
+  opacity: 0;
+	padding: 0px;
+}
+
+.blurb-div {
+	display: block;
+	width:100%;
+	margin-bottom: 5px;
+}
+
+.blurb-div-h {
+	display: block;
+	width:100%;
+	margin-bottom: 5px;
+	margin-top: r10px;
+}
+
+.blurb-div:hover .blurb {
+	visibility: visible;
+  opacity: 1;
+	height: 100%;
+	padding: 5px;
+	transition: visibility 0s, opacity 0.3s linear, height 0.5s linear, padding 0s;
+	/* padding: 5px; */
+}
+
+.blurb-div-h:hover .blurb {
+	visibility: visible;
+  opacity: 1;
+	height: 100%;
+	padding: 5px;
+	transition: visibility 0s, opacity 0.3s linear, height 0.5s linear, padding 0s;
+	/* padding: 5px; */
 }
 
 #summary {

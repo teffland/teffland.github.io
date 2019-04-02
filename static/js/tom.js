@@ -1,5 +1,59 @@
 function load_papers() {
 
+  var sections = [
+    {
+      'id': 'GM',
+      'blurb': '',
+    },
+    {
+      'id': 'bg',
+      'blurb': 'These papers published the central VAE idea contemporaneously. They are the only “non-text” papers but setup an idea we’ll use for > 2/3 of the rest of the papers, all other papers are applications in NLP which exemplify the surveyed NN+PGM methods.',
+    },
+    {
+      'id': 'fcls',
+      'blurb': 'On modeling text generation given continuous-valued latent variables. These best align with the vanilla Gaussian VAE',
+    },
+    {
+      'id': 'mpc',
+      'blurb': '“Posterior Collapse” is a huge problem in text VAEs since powerful autoregressive generative models learn have degenerate optima that ignore the latent variables. There is a large thread of work on mitigating this problem specifically, and it\'s often a subtheme of the other vae text papers.',
+    },
+    {
+      'id': 'adli',
+      'blurb': 'Previous papers discuss continuous latent representations, these are concerned with estimation of discrete latent variables.',
+    },
+    {
+      'id': 'SI',
+      'blurb': 'Stepping away from VAEs for a bit, we will explore how neural networks can be used to nonlinearly predict potentials for CRFs. All of these methods rely on the fact that structured inference (message passing) is differentiable, allowing for gradient signal to flow through inference into the feature functions.',
+    },
+    {
+      'id': 'ei',
+      'blurb': 'First we discuss models where exact inference (computation of partition function) is tractable',
+    },
+    {
+      'id': 'ai',
+      'blurb': 'We then discuss learning with intractable CRFs by differentiating through the inference approximation. These papers present examples of two different approximation approaches.',
+    },
+    {
+      'id': 'SSSL',
+      'blurb': 'These papers fuse VAEs and structured inference by performing semi-supervised VAE learning where the latent variables are entire discrete structures.',
+    },
+    {
+      'id': 'ALVA',
+      'blurb': 'There is a tremendous amount of common ground between attention mechanisms and latent variable models. We review some of those connections here.',
+    },
+  ]
+
+  sections.map(function(section, i){
+    var element = document.getElementById(section.id)
+    if (element && section.blurb) {
+      element.innerHTML = `<div class="blurb-div-h">${element.innerHTML}*<div class='blurb'>${section.blurb}</div></div>`
+      // var div = document.createElement('div')
+      // div.class = "blurb-div"
+      // div.innerHTML = `${element.HTML}*<div class='blurb'>${section.blurb}</div>`
+      // element.parentNode.replaceChild(div, element)
+    }
+  })
+
   var papers = [
 
     // VAE Background
@@ -9,7 +63,7 @@ function load_papers() {
       'title':'Auto-Encoding Variational Bayes',
       'authors':'Diederik Kingma, Max Welling',
       'citation':'ICLR 2014',
-      'notes': []
+      'blurb': ''
     },
     {
       'tag':'Rezende14',
@@ -17,7 +71,7 @@ function load_papers() {
       'title':'Stochastic Backpropagation and Approximate Inference in Deep Generative Models',
       'authors':'Danilo J. Rezende, Shair Mohamed, Daan Wierstra',
       'citation':'ICML 2014',
-      'notes': []
+      'blurb': ''
     },
     // VAE document modeling and classification
     // theres gotta be one that uses VAE for semi-sup doc classification
@@ -29,7 +83,7 @@ function load_papers() {
       'title':'Neural Variational Inference for Text Processing',
       'authors':'Yishu Miao, Lei Yu, Phil Blunsom',
       'citation':'ICML 2016',
-      'notes': []
+      'blurb': 'Models text with latent gaussian and bag-of-words document representation'
     },
     {
       'tag':'Bowman16',
@@ -37,7 +91,7 @@ function load_papers() {
       'title':'Generating Sentences from Continuous Space',
       'authors':'Samuel R. Bowman, Luke Vilnis, Oriol Vinyals, Andrew M. Dai, Rafal Jozefowicz, Samy Bengio',
       'citation':'CoNLL 2016',
-      'notes': []
+      'blurb': 'Models sentences with seq2seq using a latent gaussian - introduces the posterior collapse problem'
     },
     {
       'tag':'Guu18',
@@ -45,7 +99,7 @@ function load_papers() {
       'title':'Generating Sentences by Editing Prototypes',
       'authors':'Kelvin Guu, Tatsunori B. Hashimoto, Yonatan Oren, Percy Liang',
       'citation':'TACL Volume 6, 2018, p.437-450',
-      'notes': []
+      'blurb': 'Instead of modeling generation of a sentence from scratch, they first sample a prototype sentence (from the training data) together with a continuous "edit" vector, then generate the sentence as an "edit" of the sampled sentence.'
     },
 
     // Posterior Collapse
@@ -55,7 +109,7 @@ function load_papers() {
       'title':'Spherical Latent Spaces for Stable Variational Autoencoders',
       'authors':'Jiacheng Xu, Greg Durrett',
       'citation':'EMNLP 2018',
-      'notes': []
+      'blurb': 'Proposes using a different latent variable distribution, vonMises instead of Gaussian, which empirically eliminates the collapse.'
     },
     {
       'tag':'Kim18',
@@ -63,7 +117,7 @@ function load_papers() {
       'title':'Semi-Amortized Variational Autoencoders',
       'authors':'Yoon Kim, Sam Wiseman, Andrew C. Miller, David Sontag, Alexander M. Rush',
       'citation':'ICML 2018',
-      'notes': []
+      'blurb': 'Proposes to use the “inference” network outputs as initialization for traditional stochastic variational inference. They then backprop through the inner SVI loop into the inference network. It works well but the method is very slow.'
     },
     {
       'tag':'He19',
@@ -71,7 +125,7 @@ function load_papers() {
       'title':'Lagging Inference Networks and Posterior Collapse in Variational Autoencoders',
       'authors':'Junxian He, Daniel Spokoyny, Graham Neubig',
       'citation':'ICLR 2019',
-      'notes': []
+      'blurb': 'Proposes to bring VAE objective closer to EM (where the posterior params are true posterior under current generative params) by taking more inference parameter update steps early in training relative to the generative model updates.  Empirically convincing results and significantly simpler/faster than previous approaches.'
     },
     // Adjis paper on using skip connections
 
@@ -82,7 +136,7 @@ function load_papers() {
       'title':'Autoencoding Variational Inference For Topic Models',
       'authors':'Akash Srivastava, Charles Sutton',
       'citation':'ICLR 2017',
-      'notes': []
+      'blurb': 'First successful attempt at VAE for LDA by collapsing out latent discrete topic choices, z, and using a logistic normal approximation to dirichlet sampling. This greatly improves inference speed in LDA through amortization.'
     },
     {
       'tag':'Miao17a',
@@ -90,7 +144,7 @@ function load_papers() {
       'title':'Discovering Discrete Latent Topics with Neural Variational Inference',
       'authors':'Yishu Miao, Edward Grefenstette, Phil Blunsom',
       'citation':'ICML 2017',
-      'notes': []
+      'blurb': 'Contemporaneous VAE for LDA that generalizes to unbounded number of topics using a stick-breaking process parameterized by an RNN.'
     },
     {
       'tag':'Miao17b',
@@ -98,7 +152,7 @@ function load_papers() {
       'title':'Latent Intention Dialogue Models',
       'authors':'Tsung-Hsien Wen, Yishu Miao, Phil Blunsom',
       'citation':'ICML 2017',
-      'notes': []
+      'blurb': 'Frames dialogue as VAE with a discrete latent “intention” variable for generation.'
     },
     {
       'tag':'Yang17',
@@ -106,7 +160,7 @@ function load_papers() {
       'title':'Improved Variational Autoencoders for Text Modeling using Dilated Convolutions',
       'authors':'Zichao Yang, Zhiting Hu, Rusian Salakhudinov, Taylor Berg-Kirkpatrick',
       'citation':'ICML 2017',
-      'notes': []
+      'blurb': 'Uses a dilated convolutional network for generation, allowing for control of history size used by the generator, pressuring the model to rely on the latent variable and avoid collapse. They test this on language modeling and a semi-supervised sentence classification task.'
     },
 
     //// Structured Inference
@@ -117,7 +171,7 @@ function load_papers() {
       'title':'Neural Architectures for Named Entity Recognition',
       'authors':'Guillaume Lample, Miguel Ballesteros, Sandeep Subramanian, Kazuya Kawakami, Chris Dyer',
       'citation':'NAACL 2016',
-      'notes': []
+      'blurb': 'Shows how to combine sequence CRF distributions with complex learned feature representations of text, taking into account character and word-level nonlinear features, yielding very strong results.'
     },
     {
       'tag':'Greenberg18',
@@ -125,7 +179,7 @@ function load_papers() {
       'title':'Marginal Likelihood Training of BiLSTM-CRF for Biomedical Named Entity Recognition from Disjoint Label Sets',
       'authors':'Nathan Greenberf, Trapit Bansal, Patrick Verga, Andrew McCallum',
       'citation':'EMNLP 2018',
-      'notes': []
+      'blurb': 'They extend this idea and optimize sequence CRF marginal distributions on partially observed sequences of annotations across multiple datasets, allowing fusion of multiple resources.'
     },
     {
       'tag':'Durrett15',
@@ -133,7 +187,7 @@ function load_papers() {
       'title':'Neural CRF Parsing',
       'authors':'Greg Durrett, Dan Klein',
       'citation':'ACL 2015',
-      'notes': []
+      'blurb': 'Same as [Lample et al. 16] but for CKY tree parsing'
     },
     {
       'tag':'Kitaev18',
@@ -141,26 +195,18 @@ function load_papers() {
       'title':'Constituency Parsing with a Self-Attentive Encoder',
       'authors':'Nikita Kitaev, Dan Klein',
       'citation':'ACL 2018',
-      'notes': []
+      'blurb': 'Significant improvements on [Durrett and Klein 15] by incorporating general pretrained neural representation models, demonstrating that graphical model performance can greatly benefit from pretrained representation learning for feature transfer.'
     },
 
 
     // Approximation-Aware Training
-    {
-      'tag':'Gormley15',
-      'href':'http://arxiv.org/abs/1508.02375',
-      'title':'Approximation-Aware Dependency Parsing by Belief Propagation',
-      'authors':'Matthew R. Gormley, Mark Dredze, Jason Eisner',
-      'citation':'TACL 2015',
-      'notes': []
-    },
     {
       'tag':'Ganea17',
       'href':'http://arxiv.org/abs/1704.04920',
       'title':'Deep Joint Entity Disambiguation with Local Neural Attention',
       'authors':'Octavian-Eugen Ganea, Thomas Hofmann',
       'citation':'EMNLP 2017',
-      'notes': []
+      'blurb': 'Performs joint entity linking in fully connected CRF using loopy belief propagation. Trains the model to be "approximation-aware" by backproping through LBP during training.'
     },
     {
       'tag':'Andor16',
@@ -168,7 +214,7 @@ function load_papers() {
       'title':'Globally Normalized Transition-Based Neural Networks',
       'authors':'Daniel Andor, Chris ALberti, David Weiss, Aliaksei Severyn, Alessandro Presta, Kuzman Ganchev, Slav Petrov, Michael Collins',
       'citation':'ACL 2016',
-      'notes': []
+      'blurb': 'Trains a CRF transition-based parser by using beam search to approximate the partition function.'
     },
 
 
@@ -179,7 +225,7 @@ function load_papers() {
       'title':'Language as a Latent Variable: Discrete Generative Models for Sentence Compression',
       'authors':'Yishu Miao, Phil Blunsom',
       'citation':'EMNLP 2016',
-      'notes': []
+      'blurb': 'Propose to use discrete compressed sentence as latent representation and learn a semi-supervised VAE to perform compression and elaboration. They use REINFORCE to estimate inference gradient for unsupervised examples.'
     },
     {
       'tag':'Zhang17',
@@ -187,15 +233,15 @@ function load_papers() {
       'title':'Semi-supervised Structured Prediction with Neural CRF Autoencoder',
       'authors':'Xiao Zhang, Yong Jiang, Hao Peng, Kewei Tu, Dan Goldwasser',
       'citation':'ACL 2017',
-      'notes': []
+      'blurb': 'Propose a tagging VAE where the inference network is a sequence CRF and the generative model is a conditionally independent word emission model given the tag sequence, allowing them to optimize with Expectation Maximization.'
     },
     {
       'tag':'Yin18',
-      'href':'http://arxiv.org/abs/1808.10805',
+      'href':'http://arxiv.org/abs/1806.07832',
       'title':'StructVAE: Tree-structured Latent Variable Models for Semi-supervised Semantic Parsing',
       'authors':'Pengcheng Yin, Chunting Zhou, Junxian He, Graham Neubig',
       'citation':'ACL 2018',
-      'notes': []
+      'blurb': 'Propose a model for semantic tree parsing using a semi-supervised VAE as in [Miao and Blunsom 16], by linearizing the latent trees and using a sequence model with REINFORCE.'
     },
     {
       'tag':'Caio19',
@@ -203,18 +249,18 @@ function load_papers() {
       'title':'Differentiable Pertub-and-Parse: Semi-Supervised Parsing with a Structured Variational Autoencoder',
       'authors':'Caio Corro, Ivan Titov',
       'citation':'ICLR 2019',
-      'notes': []
+      'blurb': 'Propose a VAE for semi-supervised learning of a CRF Eisner dependency parser by using perturb-and-map to get a sample tree and relaxing the argmax operation in the inference algorithm to produce a differentiable "soft" tree that is amenable to backpropagation.'
     },
 
     // Attention
     // ?Gumble softmax / Concrete
     {
       'tag':'Lei16',
-      'href':'http://arxiv.org/abs/1804.10637',
+      'href':'https://arxiv.org/abs/1606.04155',
       'title':'Rationalizing Neural Predictions',
       'authors':'Tao Lei, Regina Barzilay, Tommi Jaakola',
       'citation':'EMNLP 2016',
-      'notes': []
+      'blurb': 'Propose to use hard binary attention to subsample the text used for sentiment prediction, forcing the model to learn to focus on the sentiment phrases. By using hard attention and REINFORCE, they add Lasso and Fused regularization terms to increase interpretability.'
     },
     {
       'tag':'Deng18',
@@ -222,7 +268,7 @@ function load_papers() {
       'title':'Latent Alignment and Variational Attention',
       'authors':'Yuntian Deng, Yoon Kim, Justin Chiu, Demi Guo, Alexander Rush',
       'citation':'NeurIPS 2018',
-      'notes': []
+      'blurb': 'They frame attention as a latent variable, allowing for the use of a variational posterior on attentions during learning which has access to the desired output and can sample better attentions during learning.'
     },
     {
       'tag':'Le18',
@@ -230,7 +276,7 @@ function load_papers() {
       'title':'Improving Entity Linking by Modeling Latent Relations between Mentions',
       'authors':'Phong Le, Ivan Titov',
       'citation':'ACL 2018',
-      'notes': []
+      'blurb': 'They extend [Ganea and Hofmann 17] to model latent multi-relational factors between cooccuring entity links, by normalizing over these factors within the model, the latent relations form an attention distribution over potential edges of varying types between entities.'
     },
     {
       'tag':'Kim17',
@@ -238,7 +284,7 @@ function load_papers() {
       'title':'Structured Attention Networks',
       'authors':'Yoon Kim, Carl Denton, Luong Hoang, Alexander M. Rush',
       'citation':'ICLR 2017',
-      'notes': []
+      'blurb': 'They extend categorical attention to other structured distributions (sequential and dependency tree CRFs) and use the resulting marginals as the attention values, effectively incorporating structured inference as a submodule of a deep learning method.'
     },
     {
       'tag':'Strubell18',
@@ -246,7 +292,7 @@ function load_papers() {
       'title':'Linguistically-Informed Self-Attention for Semantic Role Labeling',
       'authors':'Emma Strubell, Patrick Verga, Daniel Andor, David Weiss, Andrew McCallum',
       'citation':'EMNLP 2018',
-      'notes': []
+      'blurb': 'They supervise ond of the attention heads in a Transformer self-attention architecture with gold dependency parses, teaching the model to directly predict syntax as part of it\'s encoding, yielding state-of-the-art results.'
     },
 
   ];
@@ -254,8 +300,13 @@ function load_papers() {
   papers.map(function(paper, i){
     var element = document.getElementById(paper.tag)
     if (element) {
-      element.innerHTML = `(${i+1}) <a href="${paper.href}"><tag id="p_title">${paper.title}</tag></a><br><tag id="p_auth">${paper.authors}</tag><br>${paper.citation}<br><br>`
+      if (paper.blurb) {
+        element.innerHTML = `<div class="blurb-div">(${i+1}) <a href="${paper.href}"><tag id="p_title">* ${paper.title}</tag></a><br><tag id="p_auth">${paper.authors}</tag><br>${paper.citation}<br><div class='blurb'>${paper.blurb}</div></div>`
+      } else {
+        element.innerHTML = `<div class="blurb-div">(${i+1}) <a href="${paper.href}"><tag id="p_title">${paper.title}</tag></a><br><tag id="p_auth">${paper.authors}</tag><br>${paper.citation}<br></div>`
+      }
     }
+
   })
 
 	//METHODOLOGY
