@@ -104,6 +104,14 @@ function load_papers() {
 
     // Posterior Collapse
     {
+      'tag':'Yang17',
+      'href':'https://arxiv.org/abs/1702.08139v2',
+      'title':'Improved Variational Autoencoders for Text Modeling using Dilated Convolutions',
+      'authors':'Zichao Yang, Zhiting Hu, Rusian Salakhudinov, Taylor Berg-Kirkpatrick',
+      'citation':'ICML 2017',
+      'blurb': 'Uses a dilated convolutional network for generation, allowing for control of history size used by the generator, pressuring the model to rely on the latent variable and avoid collapse. They test this on language modeling and a semi-supervised sentence classification task.'
+    },
+    {
       'tag':'Xu18',
       'href':'http://arxiv.org/abs/1808.10805',
       'title':'Spherical Latent Spaces for Stable Variational Autoencoders',
@@ -153,14 +161,6 @@ function load_papers() {
       'authors':'Tsung-Hsien Wen, Yishu Miao, Phil Blunsom',
       'citation':'ICML 2017',
       'blurb': 'Frames dialogue as VAE with a discrete latent “intention” variable for generation.'
-    },
-    {
-      'tag':'Yang17',
-      'href':'https://arxiv.org/abs/1702.08139v2',
-      'title':'Improved Variational Autoencoders for Text Modeling using Dilated Convolutions',
-      'authors':'Zichao Yang, Zhiting Hu, Rusian Salakhudinov, Taylor Berg-Kirkpatrick',
-      'citation':'ICML 2017',
-      'blurb': 'Uses a dilated convolutional network for generation, allowing for control of history size used by the generator, pressuring the model to rely on the latent variable and avoid collapse. They test this on language modeling and a semi-supervised sentence classification task.'
     },
 
     //// Structured Inference
