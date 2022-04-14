@@ -1,193 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-111283885-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111283885-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-111283885-1');
-  </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+      gtag("config", "UA-111283885-1");
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <title>Tom Effland</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="static/css/bootstrap.min.css"
+      type="text/css"
+    />
 
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="static/font-awesome/css/font-awesome.min.css"
+      type="text/css"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css"> -->
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="static/css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="static/css/animate.min.css" type="text/css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="static/css/creative.css" type="text/css">
+    <link rel="stylesheet" href="static/css/creative.css" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+  </head>
 
-</head>
-
-<body id="page-top">
-
+  <body id="page-top">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- top left brand -->
-                <a class="navbar-brand page-scroll" href="#page-top">Tom Effland</a>
-            </div>
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- top left brand -->
+          <a class="navbar-brand page-scroll" href="#page-top">Tom Effland</a>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#research">Research</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#publications">Papers</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#resources">Resources</a>
-                    </li>
-                    <!-- <li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="page-scroll" href="#startup">Startup</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#research">Research</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#publications">Papers</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#resources">Resources</a>
+            </li>
+            <!-- <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li> -->
-                    <li>
-                        <a class="page-scroll" href="static/cv_1-23-19.pdf">CV</a>
-                    </li>
-                    <li>
-                    <!-- <a class="page-scroll" href="#contact"></a> -->
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            <li>
+              <a class="page-scroll" href="static/cv_4-13-22.pdf">CV</a>
+            </li>
+            <li>
+              <!-- <a class="page-scroll" href="#contact"></a> -->
+            </li>
+          </ul>
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
     </nav>
 
     <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <div id="headshot"></div>
-                <br>
-                <br>
-                <p>
-                  I'm a sixth year PhD candidate in Computer Science at Columbia University.
-                  <br>
-                  At a high level, I'm interested in how machine reading
-                  <br>
-                  can help us make sense of vast oceans of text
-                  <br>
-                  so that we can be better informed and make smarter choices.
-                </p>
-                <div class="social">
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/tomeffland" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                                <li><a href="mailto:teffland@cs.columbia.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-                                <li><a href="https://github.com/teffland" class="icon fa-github"><span class="label">Github</span></a></li>
-                                <li><a href="http://stackoverflow.com/users/2666216/taaam" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
-                            </ul>
-                </div>
-            </div>
+      <div class="header-content">
+        <div class="header-content-inner">
+          <div id="headshot"></div>
+          <br />
+          <br />
+          <p>
+            Hi! I'm Tom. I build complex machine reading systems.
+            <br />
+            I'm a graduating PhD student from Columbia
+            <br />
+            and the technical co-founder of an AI Startup.
+            <br />
+            <br />
+            At a high level, I'm interested in how machine reading
+            <br />
+            can help us make sense of vast oceans of text
+            <br />
+            so that we can be better informed and make smarter choices.
+          </p>
+          <div class="social">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/tomeffland"
+                  class="icon fa-linkedin"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:teffland@cs.columbia.edu"
+                  class="icon fa-envelope-o"
+                  ><span class="label">Email</span></a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/teffland" class="icon fa-github"
+                  ><span class="label">Github</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://stackoverflow.com/users/2666216/taaam"
+                  class="icon fa-stack-overflow"
+                  ><span class="label">Stack Overflow</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </header>
+
+    <!-- STARTUP -->
+    <section id="startup">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="section-heading">Startup</h2>
+            <hr class="primary" />
+            <p>
+              I'm the technical founder and CTO at Stealth, where we are
+              building next-generation machine reading technology to help people
+              understand complex documents in minutes instead of hours.
+            </p>
+            <p>
+              We are translating insights and capabilities from the
+              state-of-the-art in machine learning and natural language
+              processing research into a real system that empowers domain
+              experts and organizations to be more effective in a valuable
+              legaltech / fintech market.
+            </p>
+            <p>
+              We are venture-backed and are actively seeking to add skilled and
+              motivated frontend, backend, and ml/nlp engineers to our team, so
+              if that sounds interesting, feel free to reach out!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- RESEARCH -->
     <section id="research">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Research</h2>
-                    <hr class="primary">
-                    <p>
-                      Recently I've been researching semi-supervised methods for making information extraction models as annotation-efficient as possible
-                      using prinicipled statistical methods for applying subject-matter expertise as weak supervision. I'm generally interested in all aspects surrounding
-                      building automated systems for generating structured knowledge bases from text in atypical or low-resource situations.
-                    </p>
-                    <p>
-                      Previously I worked on a decision support system that utilizes text mining to aid
-                      NYC Deparment of Health epidemiologists in tracking actionable indicators of foodborne illness
-                      from online restaurant reviews.
-                    </p>
-                    
-                  
-                    <h2 class="section-heading">Startup</h2>
-                    <hr class="primary">
-                    <p>
-                      While my research work has been focused on core methodological advances, I have also 
-                      been working on a startup over the past two years. We are translating insights and capabilities
-                      from the state-of-the-art in machine learning and natural language processing research
-                      into a real system that empowers domain experts and organizations to be more effective in a valuable
-                      legaltech / fintech market. We are actively seeking to add skilled and motivated frontend, backend, 
-                      and ML/NLP engineers to our team, so if that sounds interesting, feel free to reach out.
-                    </p>
-                    
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="section-heading">Research</h2>
+            <hr class="primary" />
+            <p>
+              For the past several years I've been researching semi-supervised
+              methods for making information extraction models as
+              annotation-efficient as possible using prinicipled statistical
+              methods for applying subject-matter expertise as weak supervision.
+              I'm generally interested in all aspects surrounding building
+              automated systems for generating structured knowledge bases from
+              text in atypical or low-resource situations. I'm advised by
+              Michael Collins.
+            </p>
+            <p>
+              Previously I worked on a decision support system that utilizes
+              text mining to aid NYC Deparment of Health epidemiologists in
+              tracking actionable indicators of foodborne illness from Yelp
+              reviews.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-<!-- <hr class="muted"> -->
+
+    <!-- <hr class="muted"> -->
     <!-- PROJECTS -->
     <section id="projects">
-        <div class="container">
-            <div class="row">
-                 <div class="col-lg-12">
-                    <h2 class="section-heading">Selected Projects</h2>
-                    <hr>
-                </div>
-            </div>
-          
-            <div class="row">
-              <div class="col-md-2 col-md-offset-2">
-                <div class="project-pic"
-                     style="background-size:110%;
-                            background-position:50% 40%;
-                            background-image: url(static/img/pner.png);"></div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <h3>Partially Supervised NER</h3>
-                <p>
-                  Recently published in TACL, I proposed an approach for learning Named Entity Recognition models when the data has incomplete, low-recall annotations.
-                  Called the Expected Entity Ratio, the method corrects for missing spans using a principled latent-variable approach, coupled with an additional loss term
-                  that guides it to have the expected number of entities. 
-                  
-                  The cool thing is that it enables annotators to move fast and leave repetitive or long documents unfinished without suffering a performance hit.
-                  In fact we show that it can actually be <i>more</i> annotation-efficient to label documents this way when the annotation budget is modest.
-                <p>
-                  <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00429/108606/Partially-Supervised-Named-Entity-Recognition-via" class="icon fa-file-text-o" title="Paper"></a>
-                  <a href="https://github.com/teffland/ner-expected-entity-ratio7" class="icon fa-code-fork" title="Code"></a>
-                </p>
-              </div>
-            </div>
-            
-          
-            <!-- Allen-Opt -->
-            <!-- <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading">Selected Projects</h2>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2">
+            <div
+              class="project-pic"
+              style="
+                background-size: 110%;
+                background-position: 50% 40%;
+                background-image: url(static/img/pner.png);
+              "
+            ></div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3>Partially Supervised NER</h3>
+            <p>
+              Recently published in TACL, I proposed an approach for learning
+              Named Entity Recognition models when the data has incomplete,
+              low-recall annotations. Called the Expected Entity Ratio, the
+              method corrects for missing spans using a principled
+              latent-variable approach, coupled with an additional loss term
+              that guides it to have the expected number of entities. The cool
+              thing is that it enables annotators to move fast and leave
+              repetitive or long documents unfinished without suffering a
+              performance hit. In fact we show that it can actually be
+              <i>more</i> annotation-efficient to label documents this way when
+              the annotation budget is modest.
+            </p>
+
+            <p>
+              <a
+                href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00429/108606/Partially-Supervised-Named-Entity-Recognition-via"
+                class="icon fa-file-text-o"
+                title="Paper"
+              ></a>
+              <a
+                href="https://github.com/teffland/ner-expected-entity-ratio7"
+                class="icon fa-code-fork"
+                title="Code"
+              ></a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Allen-Opt -->
+        <!-- <div class="row">
               <div class="col-md-2 col-md-offset-2">
                 <div class="project-pic"
                      style="background-size:110%;
@@ -209,8 +303,8 @@
               </div>
             </div> -->
 
-            <!-- PyTorch Monitor -->
-            <!-- <div class="row">
+        <!-- PyTorch Monitor -->
+        <!-- <div class="row">
               <div class="col-md-2 col-md-offset-2">
                 <div class="project-pic"
                      style="background-size:110%;
@@ -235,56 +329,88 @@
               </div>
             </div> -->
 
-            <!-- FBNYC -->
-            <div class="row">
-              <div class="col-md-2 col-md-offset-2">
-                <div class="project-pic"
-                     style="background-size:190%;
-                            background-position:10% 50%;
-                            background-image: url(static/img/yelp_nyc_fit.jpg);"></div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <h3>Detecting Foodborne Illness on Social Media</h3>
-                <h4><small>Joint work with Lampros Flokas, Yogesh Garg, and Anna Lawson</small></h4>
-                <h4><small>Advised by Luis Gravano and Daniel Hsu</small></h4>
-                <p>Many people disclose incidents foodborne illness on Yelp and Twitter.
-                  In collaboration with the NYC Department of Health and Mental Hygiene,
-                  we built a document classification system that mines Yelp and Twitter
-                  for reports of foodborne illness to facilitate the targeted investigation
-                  of foodborne illness outbreaks.
-                </p>
-                <p>
-                  <a href="http://publichealth.cs.columbia.edu/" class="icon fa-globe" title="Project Website"></a>
-                  <a href="https://github.com/teffland/FoodborneNYC" class="icon fa-code-fork" title="Code"></a>
-                </p>
-              </div>
-            </div>
+        <!-- FBNYC -->
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2">
+            <div
+              class="project-pic"
+              style="
+                background-size: 190%;
+                background-position: 10% 50%;
+                background-image: url(static/img/yelp_nyc_fit.jpg);
+              "
+            ></div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3>Detecting Foodborne Illness on Social Media</h3>
+            <h4>
+              <small
+                >Joint work with Lampros Flokas, Yogesh Garg, and Anna
+                Lawson</small
+              >
+            </h4>
+            <h4><small>Advised by Luis Gravano and Daniel Hsu</small></h4>
+            <p>
+              Many people disclose incidents foodborne illness on Yelp and
+              Twitter. In collaboration with the NYC Department of Health and
+              Mental Hygiene, we built a document classification system that
+              mines Yelp and Twitter for reports of foodborne illness to
+              facilitate the targeted investigation of foodborne illness
+              outbreaks.
+            </p>
+            <p>
+              <a
+                href="http://publichealth.cs.columbia.edu/"
+                class="icon fa-globe"
+                title="Project Website"
+              ></a>
+              <a
+                href="https://github.com/teffland/FoodborneNYC"
+                class="icon fa-code-fork"
+                title="Code"
+              ></a>
+            </p>
+          </div>
+        </div>
 
-            <!-- dExplorer -->
-            <div class="row">
-              <div class="col-md-2 col-md-offset-2">
-                <div class="project-pic"
-                     style="background-size:100%;
-                            background-position:10% 50%;
-                            background-image: url(static/img/dexplorer.png);"></div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <h3>The Posts Recommendation Algorithm for dExplorer</h3>
-                <h4><small>Joint work with Drashko Nakikj</small></h4>
-                <p>Using a mixture of unsupervised document similarity methods,
-                we recommend relevant posts in medical discussion forums to help
-                users find the information they're seeking faster. We're currently
-                developing a chrome extension to put the algorithm into practice.
-                </p>
-                <p>
-                  <a href="static/papers/dExplorer_poster.pdf" class="icon fa-newspaper-o" title="Poster"></a>
-                  <a href="https://github.com/teffland/dExplorer" class="icon fa-code-fork" title="Code (In Flux)"></a>
-                </p>
-              </div>
-            </div>
+        <!-- dExplorer -->
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2">
+            <div
+              class="project-pic"
+              style="
+                background-size: 100%;
+                background-position: 10% 50%;
+                background-image: url(static/img/dexplorer.png);
+              "
+            ></div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h3>The Posts Recommendation Algorithm for dExplorer</h3>
+            <h4><small>Joint work with Drashko Nakikj</small></h4>
+            <p>
+              Using a mixture of unsupervised document similarity methods, we
+              recommend relevant posts in medical discussion forums to help
+              users find the information they're seeking faster. We're currently
+              developing a chrome extension to put the algorithm into practice.
+            </p>
+            <p>
+              <a
+                href="static/papers/dExplorer_poster.pdf"
+                class="icon fa-newspaper-o"
+                title="Poster"
+              ></a>
+              <a
+                href="https://github.com/teffland/dExplorer"
+                class="icon fa-code-fork"
+                title="Code (In Flux)"
+              ></a>
+            </p>
+          </div>
+        </div>
 
-            <!-- FindIt -->
-            <!-- <div class="row">
+        <!-- FindIt -->
+        <!-- <div class="row">
               <div class="col-md-2 col-md-offset-2">
                 <div class="project-pic"
                      style="background-size:220%;
@@ -307,8 +433,8 @@
               </div>
             </div> -->
 
-            <!-- Secure Fingerprints -->
-            <!-- <div class="row">
+        <!-- Secure Fingerprints -->
+        <!-- <div class="row">
               <div class="col-md-2 col-md-offset-2">
                 <div class="project-pic"
                      style="background-size:100%;
@@ -332,8 +458,8 @@
               </div>
             </div> -->
 
-            <!-- iGlobe -->
-            <!-- <div class="row">
+        <!-- iGlobe -->
+        <!-- <div class="row">
               <div class="col-md-2 col-md-offset-2">
                 <div class="project-pic"
                      style="background-size:190%;
@@ -354,86 +480,175 @@
                 </p>
               </div>
             </div> -->
-
-        </div>
+      </div>
     </section>
 
     <!-- PAPERS -->
     <section id="publications">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Publications</h2>
-                    <hr>
-                    <ul class="publications">
-                        <li>
-                          <strong>T. Effland</strong> and Michael Collins. Partially Supervised Named Entity Recognition via the Expected Entity Ratio Loss. <i>Transactions of the Association for Computational Linguistics (TACL)</i>, December 2021
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="section-heading">Publications</h2>
+            <hr />
+            <ul class="publications">
+              <li>
+                <strong>T. Effland</strong> and Michael Collins. Partially
+                Supervised Named Entity Recognition via the Expected Entity
+                Ratio Loss.
+                <i
+                  >Transactions of the Association for Computational Linguistics
+                  (TACL)</i
+                >, December 2021
 
-                          <br>
+                <br />
 
-                          <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00429/108606/Partially-Supervised-Named-Entity-Recognition-via" class="icon fa-file-text-o" title="Paper"></a>
-                          <a href="https://github.com/teffland/ner-expected-entity-ratio7" class="icon fa-code-fork" title="Code"></a>
-                        </li>
-                      
-                        <li>
-                          <strong>T. Effland</strong>, Anna Lawson, Sharon Balter, Katelynn Devinney, Vasuhda Reddy, Luis Gravano, Daniel
-                          Hsu. Discovering Foodborne Illness in Online Restaurant Reviews. <i>Journal of the American Medical Informatics Association (JAMIA)</i>, Volume 25, Issue 12, 1 December 2018, Pages 1586 - 1592
+                <a
+                  href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00429/108606/Partially-Supervised-Named-Entity-Recognition-via"
+                  class="icon fa-file-text-o"
+                  title="Paper"
+                ></a>
+                <a
+                  href="https://github.com/teffland/ner-expected-entity-ratio7"
+                  class="icon fa-code-fork"
+                  title="Code"
+                ></a>
+              </li>
 
-                          <br>
+              <li>
+                <strong>T. Effland</strong>, Anna Lawson, Sharon Balter,
+                Katelynn Devinney, Vasuhda Reddy, Luis Gravano, Daniel Hsu.
+                Discovering Foodborne Illness in Online Restaurant Reviews.
+                <i
+                  >Journal of the American Medical Informatics Association
+                  (JAMIA)</i
+                >, Volume 25, Issue 12, 1 December 2018, Pages 1586 - 1592
 
-                          <a href="https://academic.oup.com/jamia/article-abstract/25/12/1586/4725036?redirectedFrom=fulltext" class="icon fa-file-text-o" title="Paper"></a>
-                          <a href="https://github.com/teffland/FoodborneNYC/tree/master/jamia_2017" class="icon fa-code-fork" title="Code"></a>
-                          <span class="label label-success"> Selected Press -></span>
-                            <a href="https://www.consumerreports.org/foodborne-illnesses/can-yelp-help-you-avoid-food-poisoning/" class="icon fa-newspaper-o"></a>
-                            <a href="https://www.foodandwine.com/news/yelp-food-poisoning" class="icon fa-newspaper-o"></a>
-                            <a href="https://www.nbcwashington.com/news/health/Social-Media-Helps-NYC-Health-Department-Detect-10-Food-Poisoning-Outbreaks-475432783.html" class="icon fa-newspaper-o"></a>
-                            <a href="https://www.aiin.healthcare/topics/business-intelligence/machine-learning-system-detects-10-outbreaks-foodborne-illness-yelp" class="icon fa-newspaper-o"></a>
-                            <a href="https://www.scientificamerican.com/podcast/episode/social-media-helps-id-spew-source/" class="icon fa-newspaper-o"></a>
+                <br />
 
-                        </li>
-                        <li>
-                        <strong>T. Effland</strong>. Focused Retrieval of University Course Descriptions from Highly Variable Sources. In <i>ACM Student Research Competition Grand Finals</i>, 2015.
-                        <br>
-                        <a href="static/papers/acm-src-grand.pdf" class="icon fa-file-text-o" title="Paper"></a>
-                        <span class="label label-success">First Place Award</span>
-                        </li>
-                        <li>
-                        J. Hartloff, M. Morse, B. Zhang, <strong>T. Effland</strong>, J. Cordaro, J. Schuler, S. Tulyakov, A. Rudra, V. Govindaraju. A Multiple Server Scheme for Fingerprint Fuzzy Vaults. In <i>IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</i>, 2015.
-                        <br>
-                        <a href="static/papers/CVPRW2015.pdf" class="icon fa-file-text-o" title="Paper"></a>
-                        </li>
-                        <li>
-                        M. Morse, J. Hartloff, <strong>T. Effland</strong>, J. Schuler, J. Cordaro, S. Tulyakov, A. Rudra, V. Govindaraju. Secure Fingerprint Matching With Generic Local Structures. In <i>IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</i>, 2014.
-                        <br>
-                        <a href="static/papers/cvpr-final.pdf" class="icon fa-file-text-o" title="Paper"></a>
-                        </li>
-                        <li>
-                        <strong>T. Effland</strong>, M. Schneggenburger, J. Schuler, B. Zhang, J. Hartloff, J. Dobler, S. Tulyakov, A. Rudra, V. Govindaraju. Secure Fingerprint Hashes Using Subsets of Local Structures. <i>In Proc. SPIE 9075-12, Biometric and Surveillance Technology for Human and Activity Identification XI, 90750D</i>, 2014.
-                        <br>
-                        <a href="static/papers/SPIE-2014.pdf" class="icon fa-file-text-o" title="Paper"></a>
-                        </li>
-                    </ul>
-                    <!-- <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
-                </div>
-            </div>
+                <a
+                  href="https://academic.oup.com/jamia/article-abstract/25/12/1586/4725036?redirectedFrom=fulltext"
+                  class="icon fa-file-text-o"
+                  title="Paper"
+                ></a>
+                <a
+                  href="https://github.com/teffland/FoodborneNYC/tree/master/jamia_2017"
+                  class="icon fa-code-fork"
+                  title="Code"
+                ></a>
+                <span class="label label-success"> Selected Press -></span>
+                <a
+                  href="https://www.consumerreports.org/foodborne-illnesses/can-yelp-help-you-avoid-food-poisoning/"
+                  class="icon fa-newspaper-o"
+                ></a>
+                <a
+                  href="https://www.foodandwine.com/news/yelp-food-poisoning"
+                  class="icon fa-newspaper-o"
+                ></a>
+                <a
+                  href="https://www.nbcwashington.com/news/health/Social-Media-Helps-NYC-Health-Department-Detect-10-Food-Poisoning-Outbreaks-475432783.html"
+                  class="icon fa-newspaper-o"
+                ></a>
+                <a
+                  href="https://www.aiin.healthcare/topics/business-intelligence/machine-learning-system-detects-10-outbreaks-foodborne-illness-yelp"
+                  class="icon fa-newspaper-o"
+                ></a>
+                <a
+                  href="https://www.scientificamerican.com/podcast/episode/social-media-helps-id-spew-source/"
+                  class="icon fa-newspaper-o"
+                ></a>
+              </li>
+              <li>
+                <strong>T. Effland</strong>. Focused Retrieval of University
+                Course Descriptions from Highly Variable Sources. In
+                <i>ACM Student Research Competition Grand Finals</i>, 2015.
+                <br />
+                <a
+                  href="static/papers/acm-src-grand.pdf"
+                  class="icon fa-file-text-o"
+                  title="Paper"
+                ></a>
+                <span class="label label-success">First Place Award</span>
+              </li>
+              <li>
+                J. Hartloff, M. Morse, B. Zhang, <strong>T. Effland</strong>, J.
+                Cordaro, J. Schuler, S. Tulyakov, A. Rudra, V. Govindaraju. A
+                Multiple Server Scheme for Fingerprint Fuzzy Vaults. In
+                <i
+                  >IEEE Conference on Computer Vision and Pattern Recognition
+                  Workshops (CVPRW)</i
+                >, 2015.
+                <br />
+                <a
+                  href="static/papers/CVPRW2015.pdf"
+                  class="icon fa-file-text-o"
+                  title="Paper"
+                ></a>
+              </li>
+              <li>
+                M. Morse, J. Hartloff, <strong>T. Effland</strong>, J. Schuler,
+                J. Cordaro, S. Tulyakov, A. Rudra, V. Govindaraju. Secure
+                Fingerprint Matching With Generic Local Structures. In
+                <i
+                  >IEEE Conference on Computer Vision and Pattern Recognition
+                  Workshops (CVPRW)</i
+                >, 2014.
+                <br />
+                <a
+                  href="static/papers/cvpr-final.pdf"
+                  class="icon fa-file-text-o"
+                  title="Paper"
+                ></a>
+              </li>
+              <li>
+                <strong>T. Effland</strong>, M. Schneggenburger, J. Schuler, B.
+                Zhang, J. Hartloff, J. Dobler, S. Tulyakov, A. Rudra, V.
+                Govindaraju. Secure Fingerprint Hashes Using Subsets of Local
+                Structures.
+                <i
+                  >In Proc. SPIE 9075-12, Biometric and Surveillance Technology
+                  for Human and Activity Identification XI, 90750D</i
+                >, 2014.
+                <br />
+                <a
+                  href="static/papers/SPIE-2014.pdf"
+                  class="icon fa-file-text-o"
+                  title="Paper"
+                ></a>
+              </li>
+            </ul>
+            <!-- <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- RESOURCES -->
     <section id="resources">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Resources</h2>
-                    <hr>
-                    <ul class="resources">
-                      <li>Material from my PhD candidacy exam on the intersection of deep learning and structured probabilistic models
-                        for NLP.  You can find my overview and slides <a href='candidacy.html'>here</a>
-                      <li>Some <a href="DGM_Spring_19_Perturn_and_parse_slides.pdf">slides</a> I gave in a Deep Generative Models <a href="http://stat.columbia.edu/~cunningham/teaching/GR8201/">seminar</a> on using conditional random fields in variational autoencoders</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="section-heading">Resources</h2>
+            <hr />
+            <ul class="resources">
+              <li>
+                Material from my PhD candidacy exam on the intersection of deep
+                learning and structured probabilistic models for NLP. You can
+                find my overview and slides <a href="candidacy.html">here</a>
+              </li>
+
+              <li>
+                Some
+                <a href="DGM_Spring_19_Perturn_and_parse_slides.pdf">slides</a>
+                I gave in a Deep Generative Models
+                <a href="http://stat.columbia.edu/~cunningham/teaching/GR8201/"
+                  >seminar</a
+                >
+                on using conditional random fields in variational autoencoders
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ABOUT -->
@@ -452,14 +667,13 @@
         </div>
     </section> -->
 
-
     <!-- PERSONAL -->
-<!--     <aside class="bg-dark">
+    <!--     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Some other stuff I find interesting...</h2> -->
-                <!-- <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a> -->
-       <!--      </div>
+    <!-- <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a> -->
+    <!--      </div>
         </div>
     </aside> -->
 
@@ -483,13 +697,13 @@
             </div>
         </div>
     </section> -->
-      <div class="container" id="footer">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>Made with &hearts; Tom Effland, 2017</p>
-            </div>
-          </div>
+    <div class="container" id="footer">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p>Made with &hearts; Tom Effland, 2017</p>
+        </div>
       </div>
+    </div>
     <!-- jQuery -->
     <script src="static/js/jquery.js"></script>
 
@@ -503,7 +717,5 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="static/js/creative.js"></script>
-
-</body>
-
+  </body>
 </html>
