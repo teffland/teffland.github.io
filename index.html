@@ -127,7 +127,7 @@
             <br />
             I'm a graduating PhD student from Columbia
             <br />
-            and the technical co-founder of an AI Startup.
+            and the technical co-founder of an AI startup.
             <br />
             <br />
             At a high level, I'm interested in how machine reading
@@ -207,14 +207,14 @@
             <h2 class="section-heading">Research</h2>
             <hr class="primary" />
             <p>
-              For the past several years I've been researching semi-supervised
+              For my thesis, I researched semi-supervised
               methods for making information extraction models as
               annotation-efficient as possible using prinicipled statistical
-              methods for applying subject-matter expertise as weak supervision.
+              methods for applying subject-matter expertise as weak supervision and utilizing cheaper biased data.
               I'm generally interested in all aspects surrounding building
               automated systems for generating structured knowledge bases from
               text in atypical or low-resource situations. I'm advised by
-              Michael Collins.
+              Michael Collins and defended in October 2022.
             </p>
             <p>
               Previously I worked on a decision support system that utilizes
@@ -245,14 +245,44 @@
               style="
                 background-size: 110%;
                 background-position: 50% 40%;
-                background-image: url(static/img/pner.png);
+                background-image: url(static/img/esr.png);
               "
             ></div>
           </div>
+          
+          <div class="col-md-6 col-sm-12">
+            <h3>Expected Statistic Regularization</h3>
+            <p>
+              Accepted to TACL (currently preprint), I proposed an approach for improving
+              cross-lingual syntax parsers in low resource languages by regularizing many simple
+              aspects of their behaviors on target languages with differentiable descriptive statistics.
+              Called Expected Statistic Regularization, this general method uses things like
+              marginal statistics, entropies, and other low-order descriptive statistics to
+              keep the model from making erratic and implausible errors on new, out-of-domain languages,
+              a very common error mode for pretraining+transfer learning approaches. It yields impressive results
+              and I'm excited to try it out on other structured inference problems.
+            </p>
+
+            <p>
+              <a
+                href="https://arxiv.org/abs/2210.09428"
+                class="icon fa-file-text-o"
+                title="Paper"
+              ></a>
+              <a
+                href="https://github.com/teffland/expected-statistic-regularization"
+                class="icon fa-code-fork"
+                title="Code"
+              ></a>
+            </p>
+          </div>
+        </div>
+        
+        
           <div class="col-md-6 col-sm-12">
             <h3>Partially Supervised NER</h3>
             <p>
-              Recently published in TACL, I proposed an approach for learning
+              Published in TACL 2021, I proposed an approach for learning
               Named Entity Recognition models when the data has incomplete,
               low-recall annotations. Called the Expected Entity Ratio, the
               method corrects for missing spans using a principled
@@ -272,7 +302,7 @@
                 title="Paper"
               ></a>
               <a
-                href="https://github.com/teffland/ner-expected-entity-ratio7"
+                href="https://github.com/teffland/ner-expected-entity-ratio"
                 class="icon fa-code-fork"
                 title="Code"
               ></a>
@@ -492,7 +522,28 @@
             <hr />
             <ul class="publications">
               <li>
-                <strong>T. Effland</strong> and Michael Collins. Partially
+                <strong>Thomas Effland</strong> and Michael Collins. Improving Low-Resource Cross-Lingual Parsing with Expected Statistic Regularization.
+                <i
+                  >Transactions of the Association for Computational Linguistics
+                  (TACL)</i
+                >, preprint
+
+                <br />
+                
+                <a
+                href="https://arxiv.org/abs/2210.09428"
+                class="icon fa-file-text-o"
+                title="Paper"
+                ></a>
+                <a
+                  href="https://github.com/teffland/expected-statistic-regularization"
+                  class="icon fa-code-fork"
+                  title="Code"
+                ></a>
+              </li>
+              
+              <li>
+                <strong>Thomas Effland</strong> and Michael Collins. Partially
                 Supervised Named Entity Recognition via the Expected Entity
                 Ratio Loss.
                 <i
@@ -644,6 +695,11 @@
                   >seminar</a
                 >
                 on using conditional random fields in variational autoencoders
+              </li>
+              
+              <li>
+                My defense
+                <a href="defense_slides.pdf">slides</a>.
               </li>
             </ul>
           </div>
